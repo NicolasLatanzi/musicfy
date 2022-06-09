@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    background-color: #2d2c49;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #eb98725d;
+}
+
+.my-navbar {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    opacity: .8;
+}
+
+.main-title {
+    font-size: 55px;
+    font-weight: 700;
+    color: #b7464e;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.main-button {
+    font-size: 18px;
+    padding: 15px 20px;
+    width: fit-content;
+    border-radius: 100px;
+    font-weight: 500;
+    transition: all .5s ease-in-out;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-button:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.button1 {
+    background-color: #eb98725d;
+    width: 150px;
+    text-align: center;
+}
+
+.button2 {
+    background-color: #b7464e;
+    width: 150px;
+    text-align: center;
+
+}
+
+.logo-mobile {
+    display: none;
+    height: 170px;
+    width: 170px;
+    margin: 0;
+    opacity: .8;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        margin-top: 80px;
+        
+    }
+
+    .main-title {
+        font-size: 35px;
+    }
+
+}
+
+/* Search */
+
+.form-input {
+    background-color: #b7464e;
+    padding: 20px;
+    border: 1px solid #2d2c49;
+    border-radius: 50px;
+    width: 500px;
+}
+
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center!important;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.form-input::placeholder {
+    color: #2d2c49;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-input {
+    outline: none;
+}
+
+.search-form {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.form-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form-icon {
+    color: #b7464e;
+    font-size: 40px;
+    padding: 10px;
+    border: 2px solid #eb98725d;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.form-icon:hover {
+
+    transform: scale(1.07);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+@media (max-width: 768px) {
+
+    .form-container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .form-icon {
+        font-size: 17px;
+        padding: 10px;
+    }
+
+
+    .form-input {
+        background-color: #b7464e;
+        padding: 10px;
+        border: 1px solid #2d2c49;
+        border-radius: 50px;
+        width: 500px;
+    }
+
+    .form-input::placeholder {
+        color: #2d2c49;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+
+/* Song */
+
+.song-container {
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.albums {
+    background-color: rgba(0, 0, 0, 0.188);
+    width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius:30px;
+}
+
+.top-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-img {
+    height: 300px;
+    width: 500px;
+    display: block;
+}
+
+.top-icon {
+    font-size: 20px;
+    color: #b7464e;
+    border: 3px solid #eb98725d;
+    border-radius: 50%;
+    padding: 10px;
+    align-self: center;
+}
+
+.bottom-album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.bottom-icon {
+    font-size: 20px;
+    color: #b7464e;
+    border: 3px solid #eb98725d;
+    border-radius: 50%;
+    padding: 10px;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+
+    .albums {
+        width: 80%;	
+        margin: 0 auto;
+    }
+
+
+    .top-img {
+        height: auto;
+        width: 500px!important;
+    }
+
+    .top-icon {
+        display: none!important;
+    }
+
+    .song-container {
+        margin-top: 50px;
+    }
+
+
+
+
+}
